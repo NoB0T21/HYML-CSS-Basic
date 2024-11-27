@@ -1,0 +1,19 @@
+@font-face{
+    font-family: sfmedium;
+    src: url(./font/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face{
+    font-family: sfregular;
+    src: url(./font/SFPRODISPLAYREGULAR.OTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: black;
+}
+
+body{
+    background-color: black;
+}
