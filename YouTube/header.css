@@ -1,3 +1,8 @@
+@font-face {
+    font-family: sfmedium;
+    src: url(./font/SFPRODISPLAYMEDIUM.OTF);
+}
+
 *{
     margin: 0;
     border: 0;
