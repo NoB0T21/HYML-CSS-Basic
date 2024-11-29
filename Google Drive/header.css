@@ -35,7 +35,7 @@ header{
 }
 .left_header{
     min-width: 238px;
-    margin-left: 20px;
+    margin-left: 15px;
     padding-right: 30px;
 }
 .left_header-logo{
@@ -45,14 +45,14 @@ header{
     color: rgb(227, 216, 216);
 }
 .logo{
-    height: 40px;
-    width: 45px;
+    height: 32px;
+    width: 37px;
     padding: 0.4rem;
     padding-right: 0;
     margin: 5px;
 }
 .logo_text{
-    font-size: 30px;
+    font-size: 26px;
     padding: 0.4rem;
     padding-left: 0;
     margin: 5px;
@@ -77,7 +77,7 @@ header{
 }
 .search_container{
     width: 62%;
-    min-width: 450px;
+    min-width: 680px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
