@@ -23,22 +23,23 @@ svg{
 body{
     font-family: sfregular;
     overflow: hidden;
-    background-color: black;
+    background-color: #1b1b1b;
 }
 header{
     height: 46px;
     width: 100%;
-    padding: 8px 2px;
+    padding: 3px 5px;
+    margin: 2px 10px;
     position: fixed;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    background-color: #1b1b1b;
 }
 .left_header{
-    min-width: 238px;
-    margin-left: 15px;
-    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-shrink: 0;
 }
 .left_header-logo{
     display: flex;
@@ -60,10 +61,13 @@ header{
     margin: 5px;
 }
 .center_header{
+    width: 83vw;
     display: flex;
+    align-items: center;
+    justify-content: start;
 }
 .container{
-    width: 80vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,7 +83,7 @@ header{
 }
 .search_container{
     width: 62%;
-    min-width: 680px;
+    min-width: 620px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -92,8 +96,7 @@ header{
 .search-btn{
     padding: 0.2rem;
     margin: 1px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-radius: 100%;
 }
 .search_bar{
     height: 40px;
@@ -107,11 +110,10 @@ header{
 .adv_search{
     padding: 0.2rem;
     margin: 1px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-radius: 100%;
 }
 .center2{
-    width: 10vw;
+    width: 15%;
     padding: 5px;
     padding-right: 0;
     display: flex;
@@ -121,28 +123,150 @@ header{
 .ready_for_offline, .support, .setting, .google_apps, .account{
     padding: 0.3rem;
     margin: 2px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-radius: 100%;
 }
 
-.ready_for_offline:hover, .support:hover , .setting:hover , .google_apps:hover, .account:hover, .search-btn:hover, .adv_search:hover{
-    background-color: rgba(82, 87, 90, 0.914);
+.ready_for_offline:hover, .support:hover , .setting:hover , .google_apps:hover, .account:hover{
     height: 50px;
+}
+.search-btn:hover, .adv_search:hover{
+    background-color: rgba(82, 87, 90, 0.914);
+}
+.dropdown-content3 {
+    height: 50px;
+    min-width: 250px;
+    margin-top: 17px;
+    right: -600px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    background-color: #2b2c2e;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition-duration: 0.6s;
+  }
+  .dropdown-content3 a{
+    width: 100%;
+    height: 50px;
+    font-size: medium;
+    text-decoration-line: none;
+    padding: 3px;
+    margin: 5px;
+  }
+  .ready_for_offline:hover .dropdown-content3 {
+    right: 130px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2;
+    bottom: 2;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.dropdown-content2 {
+    height: 180px;
+    min-width: 250px;
+    margin-top: 17px;
+    right: -600px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    background-color: #131313;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition-duration: 0.6s;
+  }
+  .dropdown-content2 a{
+    width: 100%;
+    height: 20px;
+    font-size: medium;
+    text-decoration-line: none;
+    padding-left: 20px;
+  }
+.more{
+    height: 50px;
+    width: 100%;
+    border: 5px #464646;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+  .dropdown-content2 a:hover{
+    font-size: large;
+  }
+.support:hover .dropdown-content2 {
+    right: 130px;
 }
 .dropdown-content1 {
     height: 100px;
-    min-width: 200px;
+    min-width: 250px;
     margin-top: 17px;
-    right: 105px;
+    right: -600px;
+    border-radius: 5px;
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     position: absolute;
     background-color: #2b2c2e;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: -500px;
-    opacity: 0;
     transition-duration: 0.6s;
   }
   .dropdown-content1 a{
@@ -158,14 +282,13 @@ header{
     background-color: #454746;
   }
   .setting:hover .dropdown-content1 {
-    opacity: 1;
-    top: 44px;
+    right: 130px;
 }
 .dropdown-content {
     height: 480px;
     min-width: 350px;
-    margin-top: 17px;
-    right: 20px;
+    margin-top: 15px;
+    right: -500px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -174,12 +297,10 @@ header{
     background-color: #242222;
     overflow-y: scroll;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: -500px;
-    opacity: 0;
-    transition-duration: 0.6s;
+    transition: right 0.6s;
 }
 .content{
-    height: 68%;
+    height: 69%;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -187,8 +308,7 @@ header{
     background-color: #1b1b1b;
 }
 .google_apps:hover .dropdown-content {
-    opacity: 1;
-    top: 47px;
+    right: 60px;
 }
 .Gapps:hover .logo-b{
     height: 52px;
@@ -202,6 +322,8 @@ header{
     height: 100vh;
 }
 .more-btn{
+    margin: 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +362,7 @@ td{
     transition-duration: 0.6s;
 }
 .logo-b{
-    height: 48px;
+    height: 5vh;
     border-radius: 10px;
     align-items: center;
     transition-duration: 0.3s;
@@ -249,6 +371,6 @@ td{
     margin-right: 20px;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     flex-direction: row;
 }
