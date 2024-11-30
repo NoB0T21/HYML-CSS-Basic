@@ -1,0 +1,136 @@
+@font-face{
+    font-family: sfmedium;
+    src: url(./font/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face{
+    font-family: sfregular;
+    src: url(./font/SFPRODISPLAYREGULAR.OTF);
+}
+
+.add{
+    height: 50px;
+    width: 18vw;
+    min-width: 190px;
+    padding: 10px;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+}
+.add_new{
+    height: 100%;
+    width: 110px;
+    margin: 0 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #38393b;
+}
+.add_new:hover {
+    background-color: rgba(82, 87, 90, 0.914);
+}
+.add_new h3{
+    padding-right: 12px;
+}
+.menu{
+    height: 50vh;
+    width: 18vw;
+    min-width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.menus{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.menu_list{
+    height: 30px;
+    width: 80%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.menu_list h5{
+    font-size: small;
+    transition: 0.3s;
+}
+.menu_list:hover{
+    background-color: rgba(82, 87, 90, 0.914);
+}
+.menu_list:hover .menu-logo1{
+    height: 24px;
+    width: 24px;
+}
+.menu_list:hover .menu_list h5{
+    font-size: larger;
+}
+.menu-logo1{
+    margin-left: 13px;
+    transition: 0.3s;
+}
+.arrow{
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+}
+.menu-logo{
+    padding: 0;
+    margin: 0;
+    margin-left: 3px;
+    margin-right: 7px;
+    transition: 0.3s;
+}
+.menu_list:hover .menu-logo{
+    height: 24px;
+    width: 24px;
+}
+.storage{
+    height: 20vh;
+    width: 18vw;
+    min-width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.storage_bar{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.progress-bar{
+    height: 5px;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    align-items: start;
+    background-color: #3c3d3d;
+}
+.progress{
+    height: 5px;
+    width: 67%;
+    border-radius: 20px;
+    border-width: 3px;
+    border-right-style: solid;
+    border-color: #1b1b1b;
+    background-color: #a9c8fa;
+}
+.get-more{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
