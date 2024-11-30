@@ -1,0 +1,47 @@
+@font-face{
+    font-family: sfmedium;
+    src: url(./font/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face{
+    font-family: sfregular;
+    src: url(./font/SFPRODISPLAYREGULAR.OTF);
+}
+
+.mm{
+    height: 85vh;
+    width: 77vw;
+    right: 65px;
+    top: 65px;
+    border-radius: 20px;
+    position: fixed;
+    background-color: #131313;
+    z-index: -1;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+/* width */
+.main::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Handle */
+  .main::-webkit-scrollbar-thumb {
+    background: #3e403f; 
+    border-radius: 20px;
+  }
+  /* Handle on hover */
+  .main::-webkit-scrollbar-thumb:hover {
+    background: #2d2e2d; 
+  }
+.main h3{
+    padding: 5px;
+    margin: 10px 20px;
+    cursor: default;
+}
+.main h5{
+    font-size: 15px;
+    margin: 0 25px;
+    cursor: default;
+}

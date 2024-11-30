@@ -103,6 +103,7 @@ header{
     width: 90%;
     font-size: large;
     outline: none;
+    cursor: pointer;
 }
 .search_bar::placeholder {
     color: #c5c7c6ed;
@@ -111,6 +112,7 @@ header{
     padding: 0.2rem;
     margin: 1px;
     border-radius: 100%;
+    cursor: pointer;
 }
 .center2{
     width: 15%;
@@ -305,12 +307,12 @@ header{
 }
 /* Handle */
 .dropdown-content::-webkit-scrollbar-thumb {
-  background: #1a1818; 
+  background: #3e403f; 
   border-radius: 20px;
 }
 /* Handle on hover */
 .dropdown-content::-webkit-scrollbar-thumb:hover {
-  background: #292626; 
+  background: #2d2e2d; 
 }
 .content{
     height: 69%;
@@ -340,6 +342,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 h4{
     height: 40px;
